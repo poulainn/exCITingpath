@@ -10,19 +10,25 @@ listDB()
 ```
 
 Returns (invisible) the list of annotations of selected databases
+
+Full liste, equivalent to loadDB(listDB()) :
 ```R
-#full liste, equivalent to loadDB(listDB())
 loadDB()
-
-#basic to get KEGG_2019_Human, BioCarta_2016 and Reactome_2016
+```
+To get KEGG_2019_Human, BioCarta_2016 and Reactome_2016 :
+```R
 loadDB("basic")
-
-#GO to get GO_Biological_Process_2018, GO_Molecular_Function_2018 and GO_Cellular_Component_2018
+```
+To get GO_Biological_Process_2018, GO_Molecular_Function_2018 and GO_Cellular_Component_2018 :
+```R
 loadDB("GO")
-
-#TF to get TRRUST_Transcription_Factors_2019, Transcription_Factor_PPIs and ENCODE_and_ChEA_Consensus_TFs_from_ChIP-X
+```
+To get TRRUST_Transcription_Factors_2019, Transcription_Factor_PPIs and ENCODE_and_ChEA_Consensus_TFs_from_ChIP-X :
+```R
 loadDB("TF")
 ```
+
+Any combination of above keywords and databases names is possible.
 
 ## install
 Dependencies 

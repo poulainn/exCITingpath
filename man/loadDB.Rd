@@ -21,5 +21,7 @@ Returns the list of annotation in selected DB
 }
 
 \examples{
+loadDB()
 loadDB("basic")
+loadDB(c("basic","GO"))
 }

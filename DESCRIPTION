@@ -1,0 +1,16 @@
+Package: exCITingpath
+Type: Package
+Title: Data package of annotations databases (enrichR and metSigDB)
+Version: 0.1.0
+Author@R: c(
+    person("Nicolas", "Poulain", email="nicolaspoulainzpl@gmail.com", role = c("aut", "cre"))
+    )
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+Imports:
+    qusage,
+    tools
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true

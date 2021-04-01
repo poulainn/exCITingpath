@@ -1,4 +1,5 @@
 
+#Function to return enrichment table
 enrich=function(a,pathway,om){
     a=intersect(a,om)
     pathway=intersect(pathway,om)

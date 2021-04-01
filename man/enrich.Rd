@@ -1,12 +1,24 @@
 \name{enrich}
 \alias{enrich}
-\title{returns list of databases available}
+\title{Returns the list of annotation in selected DB}
 \usage{
-enrich()
+enrich(a,pathway,om)
+}
+\arguments{
+  \item{a}{gene selected to perform enrichment analysis}
+  \item{pathway}{list of pathways to evaluate for enrichment, same structure as returned by loadDB function}
+  \item{om}{genes possibly enriched ie. intersection between studied genes and genes in pathway}
+}
+
 }
 \description{
-Returns the list of databases available in package
+Returns the enrichment result table
+
+
+
+    
 }
+
 \examples{
-enrich()
+    enrich(a,pathway,om)
 }

@@ -82,9 +82,9 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
 BiocManager::install("qusage")
 ```
 
-install directly from the CIT gitlab
+install directly from the github
 ```R
-devtools::install_url("https://gitlab.ligue-cancer.net/nicolas.poulain/excitingpath/-/archive/master/excitingpath-master.tar.gz")
+devtools::install_github("poulainn/exCITingpath")
 ```
 
 

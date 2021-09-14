@@ -71,6 +71,10 @@ To get TRRUST_Transcription_Factors_2019, Transcription_Factor_PPIs and ENCODE_a
 ```R
 loadDB("TF")
 ```
+To get all databases from MSIG :
+```R
+loadDB("allMSIG")
+```
 
 Any combination of above keywords and databases names is possible.
 

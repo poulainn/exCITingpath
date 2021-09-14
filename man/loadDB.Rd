@@ -9,6 +9,7 @@ loadDB(file_list=listDB())
   \item{"basic"}{"KEGG_2019_Human","BioCarta_2016","Reactome_2016"}
   \item{"GO"}{"GO_Biological_Process_2018","GO_Molecular_Function_2018","GO_Cellular_Component_2018"}
   \item{"TF"}{"TRRUST_Transcription_Factors_2019","Transcription_Factor_PPIs","ENCODE_and_ChEA_Consensus_TFs_from_ChIP-X"}
+  \item{"allMSIG"}{Databases c1 to c8 and hallmark from MSIG}
 }}
 
 }

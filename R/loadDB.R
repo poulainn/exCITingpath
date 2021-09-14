@@ -9,8 +9,8 @@ listDB <- function() {
 #load files in file_list as a list of genes sets
 loadDB<-function(file_list=listDB()){
   if("allMSIG" %in% file_list){
-    file_list=c("c1.all.v7.4.symbols.gmt","c2.all.v7.4.symbols.gmt","c3.all.v7.4.symbols.gmt","c4.all.v7.4.symbols.gmt",
-               "c5.all.v7.4.symbols.gmt",,"c6.all.v7.4.symbols.gmt","c7.all.v7.4.symbols.gmt","c8.all.v7.4.symbols.gmt",
+    file_list=c(file_list,"c1.all.v7.4.symbols.gmt","c2.all.v7.4.symbols.gmt","c3.all.v7.4.symbols.gmt","c4.all.v7.4.symbols.gmt",
+               "c5.all.v7.4.symbols.gmt","c6.all.v7.4.symbols.gmt","c7.all.v7.4.symbols.gmt","c8.all.v7.4.symbols.gmt",
                "h.all.v7.4.symbols.gmt")
     file_list=file_list[file_list!="allMSIG"]
   }

@@ -29,7 +29,7 @@ loadDB<-function(file_list=listDB()){
   DB=NULL
   file_list=file_list[file_list %in% listDB()]
   filetype=unlist(lapply(file_list, tools::file_ext))
-  for (file in file_list[filetype==""]){
+  for (file in file_list[filetype=="" | filetype=="txt"]){
     # Read in the data
     x <- scan(system.file("extdata",file,package = "exCITingpath"), what="", sep="\n")
     # Separate elements by one or more whitepace

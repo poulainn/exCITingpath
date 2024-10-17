@@ -28,6 +28,7 @@ loadDB<-function(file_list=listDB()){
   }
   DB=NULL
   file_list=file_list[file_list %in% listDB()]
+  lengthfl=length(file_list)
   filetype=unlist(lapply(file_list, tools::file_ext))
   for (file in file_list[filetype=="" | filetype=="txt"]){
     # Read in the data
@@ -35,7 +36,11 @@ loadDB<-function(file_list=listDB()){
     # Separate elements by one or more whitepace
     y <- strsplit(x, "\t+")
     # Extract the first vector element and set it as the list element name concatenated with file name separated by "~"
-    names(y) <- paste(file,sapply(y, `[[`, 1),sep="~")
+    if(lengthfl>1){
+        names(y) <- paste(file,sapply(y, `[[`, 1),sep="~")
+      }else{
+      names(y) <- sapply(y, `[[`, 1)
+    }
     # Remove the first vector element from each list element
     y <- lapply(y, `[`, -1)
     DB=c(DB,y)

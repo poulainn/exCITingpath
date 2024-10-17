@@ -55,6 +55,8 @@ listDB()
 
 Returns (invisible) the list of annotations of selected databases
 
+If more than one database is loaded, file name is concatenated to pathway names and separated with "~".
+
 Full liste, equivalent to loadDB(listDB()) :
 ```R
 loadDB()

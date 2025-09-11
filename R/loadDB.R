@@ -47,7 +47,7 @@ loadDB<-function(file_list=listDB()){
   }
 
   for (file in file_list[filetype=="gmt"]){
-    y <- qusage::read.gmt(system.file("extdata",file,package = "exCITingpath"))
+    y <- read.gmt(system.file("extdata",file,package = "exCITingpath"))
     if(lengthfl>1){
       names(y)<-paste0(file,"~",names(y))
     }
@@ -60,6 +60,7 @@ loadDB<-function(file_list=listDB()){
   invisible(DB)
 
 }
+
 
 
 

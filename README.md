@@ -81,12 +81,6 @@ loadDB("allMSIG")
 Any combination of above keywords and databases names is possible.
 
 ## install
-Dependencies 
-```R
-if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-BiocManager::install("qusage")
-```
 
 install directly from the github
 ```R
